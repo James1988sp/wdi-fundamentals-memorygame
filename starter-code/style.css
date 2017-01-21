@@ -1,5 +1,4 @@
-.board {
-	
+.board {	
 	width: 50%;
 	height: 50%;
 	display:inline-block;
@@ -17,13 +16,12 @@
 }
 
 h1 {
-   color: rgb(2,132,130);
+	color: rgb(2,132,130);
 }
 
 h2 {
-   color: #ffd700;
+	color: #ffd700;
 }
-
 
 body {
 	text-align: center;
@@ -34,7 +32,6 @@ nav {
 }
 
 a {
-
 	background-color:#ffbf00;
 	color:white;
 	padding:35px;
@@ -44,27 +41,21 @@ a {
 
 a:hover {
 	background-color: #ee5f3c;
-
 }
-
 
 .name {
 	color:#ff0000;
-
 }
+
 footer{
 	background-color: #808080;
-   
-
-
 }
 
 .clearfix:after {
-        visibility: hidden;
-        display: block;
-        content: " ";
-        clear: both;
-        height: 0;
-        font-size: 0;
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
 }
-

@@ -28,12 +28,12 @@ var createBoard = function () {
 	var cleanBoard = function(){
 		// Loop to clean wrong coiches 
 		for (i=0; i<4; i++) {
-			// Set empty html for the element with class name style "card"
+			// Set empty html for the div card element with attribute class name "card"
 			document.getElementsByClassName('card')[i].innerHTML = '';
 		}
 	}
 
-	// Function to check two card match
+	// Function to check match of two cards
 	var isMatch = function() {
 		if (cardsInPlay[0] === cardsInPlay[1]) {
 			alert('You found a match!')
@@ -64,19 +64,19 @@ var createBoard = function () {
 		}
 	}
 
-	// Main loop create board
+	// Loop to create board
 	for (var i = 0; i< cards.length; i++) {
 		
-		// We make a Div element
+		// Make a Div element
 		var cardElement = document.createElement('div');
 		
-		// We set the div card attributes
+		// Set the div class card attribute
 		cardElement.setAttribute('class', 'card');
-		// cardElement.setAttribute('id', 'card');
-		// add element to the board
+		
+		// Append child element to the board
 		board.appendChild(cardElement);
 
-		// set id to created child card
+		// Set the div id card attribute
 		cardElement.setAttribute('data-card', cards[i]);
 
 		// Add function for the click
